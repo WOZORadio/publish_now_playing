@@ -14,6 +14,7 @@ def get_listeners(target_station):
         print(listener_data)
     else:
         print(f"Error: {response.status_code}")
+    return "10.0.0.234"
 
 
 # https://support.radiojar.com/support/solutions/articles/5000004606-implementing-the-air-tunein-broadcaster-api
@@ -31,9 +32,10 @@ def get_listeners(target_station):
 
 # https://cms.tunein.com/broadcasters/api/
 def brodcast_song_details(target_station):
+    pass
 
 if __name__ == '__main__':
     target_station = 'wozo'
-    get_listeners(target_station):
+    print(get_listeners(target_station))
 
 
